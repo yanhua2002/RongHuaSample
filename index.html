@@ -1,0 +1,298 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>欢迎来到一诺融华</title>
+    <link href="format/common.css" rel="stylesheet">
+    <script src="format/jquery-1.11.2.min.js"></script>
+    <!--导航下拉 特效-->
+    <script src="format/nav.js"></script>
+    <!--焦点图 特效-->
+    <script src="format/scrollpic.js"></script>
+  </head>
+  <body>
+    <div class="all">
+      <!--头部 开始 -->
+      <div class="header">
+        <!--顶部信息 开始-->
+        <div class="top">
+          <div class="wrap_1200">
+            <div class="welcome">
+              <span>欢迎来到一诺融华网站</span>
+            </div>
+            <div class="topset">
+              <script type="text/javascript">
+// 设置为主页
+function SetHome(obj, vrl) {
+    try {
+        obj.style.behavior = 'url(#default#homepage)';
+        obj.setHomePage(vrl);
+    }
+    catch (e) {
+        if (window.netscape) {
+            try {
+                netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+            }
+            catch (e) {
+                alert("此操作被浏览器拒绝！\n请在浏览器地址栏输入“about:config”并回车\n然后将 [signed.applets.codebase_principal_support]的值设置为'true',双击即可。");
+            }
+            var prefs = Components.classes['mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefBranch);
+            prefs.setCharPref('browser.startup.homepage', vrl);
+        }
+        else {
+            alert("您的浏览器不支持，请按照下面步骤操作：1.打开浏览器设置。2.点击设置网页。3.输入：" + vrl + "点击确定。");
+        }
+    }
+}
+// 加入收藏 兼容360和IE6
+function shoucang(sTitle, sURL) {
+    try {
+        window.external.addFavorite(sURL, sTitle);
+    }
+    catch (e) {
+        try {
+            window.sidebar.addPanel(sTitle, sURL, "");
+        }
+        catch (e) {
+            alert("加入收藏失败，请使用Ctrl+D进行添加");
+        }
+    }
+}
+              </script>
+              <a href="javascript:void(0)" onclick="shoucang(document.title,window.location)">加入收藏</a>
+              <font>
+                |
+              </font>
+              <a href="javascript:void(0)" onclick="SetHome(this,window.location)">设为首页</a>
+            </div>
+            <div class="clear"></div>
+          </div>
+        </div>
+        <!--顶部信息 结束-->
+        <!--LOGO+主导航 开始-->
+        <div class="nav_bar">
+          <div class="wrap_1200">
+            <div class="logo">
+              <a href="format/index.html"></a>
+            </div>
+            <div class="nav">
+              <ul>
+                <li>
+                  <a class="nav_on" href="format/index.html" title="">首页</a>
+                </li>
+                <li>
+                  <a class="nav_on" href="http://www.yinuoronghua.com/AboutUs/about" title="">关于我们</a>
+                  <div class="subnav">
+                    <div class="subnav_box">
+                      <span>
+                        <a href="http://www.yinuoronghua.com/AboutUs/about">公司简介</a>
+                      </span><span>
+                        <a href="http://www.yinuoronghua.com/AboutUs/about_brand">集团品牌</a>
+                      </span><span>
+                        <a href="http://www.yinuoronghua.com/AboutUs/about_culture">企业文化</a>
+                      </span><span>
+                        <a href="http://www.yinuoronghua.com/AboutUs/about_course">发展历程</a>
+                      </span><span>
+                        <a href="http://www.yinuoronghua.com/AboutUs/about_organization">组织架构</a>
+                      </span><span>
+                        <a href="http://www.yinuoronghua.com/AboutUs/about_honor">一诺荣誉</a>
+                      </span><span>
+                        <a href="http://www.yinuoronghua.com/AboutUs/about_charity">一诺慈善</a>
+                      </span><span>
+                        <a href="http://www.yinuoronghua.com/AboutUs/about_partners">合作伙伴</a>
+                      </span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <a class="nav_on" href="format/index.html/IndustrialForm/industry" title="">产业形态</a>
+                  <div class="subnav">
+                    <div class="subnav_box">
+                      <span>
+                        <a href="http://www.yinuoronghua.com/industry">贷后风险控制中心</a>
+                      </span><span>
+                        <a href="http://www.yinuoronghua.com/assets_manage">资产管理中心</a>
+                      </span><span>
+                        <a href="http://www.yinuoronghua.com/financial_train">金融培训中心</a>
+                      </span><span>
+                        <a href="http://www.yinuoronghua.com/human_manage">人才智能管理中心</a>
+                      </span><span>
+                        <a href="http://www.yinuoronghua.com/IndustrialForm/outsourcing_alliance">金融外包产业联盟</a>
+                      </span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <a class="nav_on" href="http://www.yinuoronghua.com/Consultation/news?id=1" title="">一诺资讯</a>
+                  <div class="subnav">
+                    <div class="subnav_box">
+                      <span>
+                        <a href="http://www.yinuoronghua.com/Consultation/news?id=1">公司要闻</a>
+                      </span><span>
+                        <a href="http://www.yinuoronghua.com/Consultation/news?id=2">行业资讯</a>
+                      </span><span>
+                        <a href="http://www.yinuoronghua.com/Consultation/news?id=3">热点专题</a>
+                      </span>
+                    </div>
+                  </div>
+                </li>
+                <li class="">
+                  <a class="nav_on" href="http://www.yinuoronghua.com/Welcome/jobs" title="">诚聘英才</a>
+                  <div class="subnav">
+                    <div class="subnav_box">
+                      <span>
+                        <a href="http://www.yinuoronghua.com/Welcome/jobs">公司总部</a>
+                      </span><span>
+                        <a href="http://www.yinuoronghua.com/Welcome/jobs_EastChina">华东地区</a>
+                      </span><span>
+                        <a href="http://www.yinuoronghua.com/Welcome/jobs_SouthChina">华南地区</a>
+                      </span><span>
+                        <a href="http://www.yinuoronghua.com/Welcome/jobs_WestChina">华西地区</a>
+                      </span><span>
+                        <a href="http://www.yinuoronghua.com/Welcome/jobs_NorthChina">华北地区</a>
+                      </span>
+                    </div>
+                  </div>
+                </li>
+                <li class="">
+                  <a class="nav_on" href="http://www.yinuoronghua.com/ContactUs/contact" title="">联系我们</a>
+                </li>
+                <div class="clear"></div>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!--LOGO+主导航 结束-->
+      </div>
+      <!--头部 结束 -->
+      <!--主体 开始 -->
+      <link href="format/index.css" rel="stylesheet" type="text/css" media="all">
+      <div class="main">
+        <!--焦点 开始 -->
+        <div class="focus">
+          <ul class="focus_lists">
+            <li style="display: none;">
+              <a href="javascript:void(0);"><img src="../format/banner/01.jpg"></a>
+            </li>
+            <li style="display: none;">
+              <a href="javascript:void(0);"><img src="../format/banner/02.jpg"></a>
+            </li>
+            <li style="display: none;">
+              <a href="javascript:void(0);"><img src="../format/banner/03.jpg"></a>
+            </li>
+            <li style="display: none;">
+              <a href="javascript:void(0);"><img src="../format/banner/04.jpg"></a>
+            </li>
+          </ul>
+          <ul class="btns">
+            <li class="btn_1"></li>
+            <li class="btn_2"></li>
+            <li class="btn_3"></li>
+            <li class="btn_4 select"></li>
+          </ul>
+        </div>
+        <!--焦点 结束 -->
+        <!--我们的理念 开始 -->
+        <div class="philosophy">
+          <h1 class="tit">
+            <!--          <span>我们的理念 </span>
+                      <font>Our philosophy</font>-->
+            <img src="format/m_index/philosophy_tit.png" width="140" height="60" alt="">
+          </h1>
+          <div class="con">
+            <ul>
+              <li class="p_01">
+                <span>行业知识、公司制度、岗位知识、企业文化</span><a href="http://www.yinuoronghua.com/AboutUs/about_culture_01" class="view_detail">了解详情</a>
+              </li>
+              <li class="p_02">
+                <span>员工操守、行为准则、作业技能、企业人风貌</span><a href="http://www.yinuoronghua.com/AboutUs/about_culture_02" class="view_detail">了解详情</a>
+              </li>
+              <li class="p_03">
+                <span>忠于内心所想、忠于公司要求、忠于岗位需要、忠于理想目标</span><a href="http://www.yinuoronghua.com/AboutUs/about_culture_03" class="view_detail">了解详情</a>
+              </li>
+              <li class="p_04">
+                <span>有人生信条、有为人信念、有做事信心、有个人信誉</span><a href="http://www.yinuoronghua.com/AboutUs/about_culture_04" class="view_detail">了解详情</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--我们的理念 结束 -->
+      </div>
+      <!--主体 结束 -->
+      <!--底部 开始 -->
+      <div class="footer">
+        <div class="foot_bar">
+          <div class="links">
+            <ul class="link_lists">
+              <li>
+                <a href="http://www.anrunjinrong.com/" target="_blank">安润金融</a>
+              </li>
+              <li>
+                <a href="http://www.chinasouth.com.cn/" target="_blank">兵器装备</a>
+              </li>
+              <li>
+                <a href="https://www.9fbank.com/" target="_blank">玖富时代</a>
+              </li>
+              <li>
+                <a href="http://www.toyota-finance.com.cn/toyota/" target="_blank">丰田汽车金融</a>
+              </li>
+              <li>
+                <a href="http://www.cfpfinance.cn/" target="_blank">南海友诚</a>
+              </li>
+              <li>
+                <a href="http://www.dafy.com/" target="_blank">达飞微金</a>
+              </li>
+              <li>
+                <a href="http://www.tritonsfs.com/" target="_blank">海钜信达</a>
+              </li>
+              <li>
+                <a href="javascript:void();">芮城县农村信用社</a>
+              </li>
+              <li>
+                <a href="javascript:void();">高平市农村信用社</a>
+              </li>
+              <li>
+                <a href="http://www.cheryfs.cn/" target="_blank">奇瑞徽银</a>
+              </li>
+            </ul>
+            <div class="clear"></div>
+          </div>
+          <div class="about_con">
+            <div class="about_left">
+              <p>
+                <a href="http://www.yinuoronghua.com/AboutUs/about">公司简介</a>|<a href="http://www.yinuoronghua.com/AboutUs/about_culture">企业文化</a>|<a href="http://www.yinuoronghua.com/AboutUs/about_course">发展历程</a>|<a href="http://www.yinuoronghua.com/ContactUs/contact">联系我们</a>
+              </p>
+              <p>
+                <span>客服邮箱：kefu@yinuoronghua.com</span>
+              </p>
+            </div>
+            <div class="about_right">
+              <dl class="kf_dl">
+                <dt>
+                  <img src="format/footer_qrcode.jpg">
+                </dt>
+                <dd>
+                  <p class="kf_text">
+                    客服电话
+                  </p>
+                  <p class="kf_num">
+                    023-62479559
+                  </p>
+                  <p class="kf_time">
+                    （9:00-22:00）
+                  </p>
+                </dd>
+                <div class="clear"></div>
+              </dl>
+            </div>
+            <div class="clear"></div>
+          </div>
+          <div class="bottom_info">
+            鄂ICP备13033891号  湖北一诺融华投资咨询有限公司<br>
+            Copyright © 2016 www.yinuoronghua.com  一诺融华 版权所有
+          </div>
+        </div>
+      </div>
+      <!--底部 结束 -->
+    </div>
+  </body>
+</html>
