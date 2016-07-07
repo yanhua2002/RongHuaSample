@@ -1,17 +1,33 @@
-import request, error from urllib
+import urllib.request
 import queue
 
-class YNRH():
+class YNRH:
     def __init__(self):
         self.homepage="http://www.baidu.com"
         self.urlque=queue.Queue()
         self.seen=set()
 
-    def getPage(self,pageurl):
-        suite
+    def getPageCode(self,pageurl):
+        try:
+            resp=urllib.request.urlopen(pageurl)
+            data=resp.read()
+        except:
+            data=""
+        return data
 
-try: response = request.urlopen("http://www.baidu.com")
-except error.URLError as e:
-    print(e.reason)
-else:
-    print(response.read())
+    def getPageUrls(self,pageurl):
+        data=self.getPageCode(pageurl)
+        if data=="":
+            return
+
+    def start(self):
+        self.urlque.put(self.homepage)
+        self.seen.add(self.homepage)
+
+        while self.urlque.qsize()>0:
+            currentUrl=self.urlque.get()
+            self.getPageUrls(currentUrl)
+            self.seen.add(currentUrl)
+
+YiNuo=YNRH()
+YiNuo.start()
