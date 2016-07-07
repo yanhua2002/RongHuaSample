@@ -11,7 +11,7 @@
 .focus ul.focus_lists li a img{ width:auto; height:610px;}
 
 .focus ul.btns{ position:absolute; z-index:999; bottom:10px; left:50%; display:inline-block; width:170px; height:20px; padding:0; margin:0; text-align:center; margin-left:-60px;}
-.focus ul.btns li{ display:inline-block; float:left; width:10px; height:10px; margin:0 5px; overflow:hidden;  text-align:left; text-indent:-4000px; line-height:10px; font-size:0; border:none;  background:#fff; border-radius:5px;}
+.focus ul.btns li{ display:inline-block; width:10px; height:10px; margin:0 5px; overflow:hidden;  text-align:left; text-indent:-4000px; line-height:10px; font-size:0; border:none;  background:#fff; border-radius:5px;}
 .focus ul.btns li.select{ background:#f66; width:30px;}
 
 /*我们的理念*/
@@ -25,7 +25,7 @@
 
 .philosophy .con{ display:inline-block; clear:both; width:100%; height:auto; padding:0; margin:0 auto; text-align:center; overflow:hidden;}
 .philosophy .con ul{ display:inline-block; clear:both; width:100%; height:auto; padding:0; margin:0; text-align:center; overflow:hidden; list-style-type:none;}
-.philosophy .con ul li{ display:inline-block; float:left; width:300px; height:260px; padding:0; margin:0; text-align:center; overflow:hidden; list-style-type:none;}
+.philosophy .con ul li{ display:inline-block; width:300px; height:260px; padding:0; margin:0; text-align:center; overflow:hidden; list-style-type:none;}
 .philosophy .con ul li.p_01{ background:url(m_index/philosophy_tp01.png) no-repeat 50% 15px; }
 .philosophy .con ul li.p_02{ background:url(m_index/philosophy_tp02.png) no-repeat 50% 15px; }
 .philosophy .con ul li.p_03{ background:url(m_index/philosophy_tp03.png) no-repeat 50% 15px; }
