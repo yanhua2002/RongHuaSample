@@ -14,14 +14,14 @@ $(document).ready(function () {
 
         if (size > 1 && size < 6) {
             btns = $(".btns");
-            // if (btns.find('li') || btns)
-            // {
-            //     for (var i = 1; i <= size; i++)
-            //     {
-            //         li = "<li class='btn_" + i + "'></li>";
-            //         btns.append(li);
-            //     }
-            // }
+            if (btns.find('li') || btns)
+            {
+                for (var i = 1; i <= size; i++)
+                {
+                    li = "<li class='btn_" + i + "'></li>";
+                    btns.append(li);
+                }
+            }
             btns.find("li:first").addClass("select").siblings("li").removeClass("select");
             btns.find("li").bind(setting.events, function () {
                 clearInterval(slide_run);
