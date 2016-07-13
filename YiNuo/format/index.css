@@ -25,12 +25,12 @@
 
 .philosophy .con{ display:inline-block; clear:both; width:100%; height:auto; padding:0; margin:0 auto; text-align:center; overflow:hidden;}
 .philosophy .con ul{ display:inline-block; clear:both; width:100%; height:auto; padding:0; margin:0; text-align:center; overflow:hidden; list-style-type:none;}
-.philosophy .con ul li{ display:inline-block; width:300px; height:260px; padding:0; margin:0; text-align:center; overflow:hidden; list-style-type:none;}
+.philosophy .con ul li{ display:inline-block; float:left; width:300px; height:260px; padding:0; margin:0; text-align:center; overflow:hidden; list-style-type:none;}
 .philosophy .con ul li.p_01{ background:url(m_index/philosophy_tp01.png) no-repeat 50% 15px; }
 .philosophy .con ul li.p_02{ background:url(m_index/philosophy_tp02.png) no-repeat 50% 15px; }
 .philosophy .con ul li.p_03{ background:url(m_index/philosophy_tp03.png) no-repeat 50% 15px; }
 .philosophy .con ul li.p_04{ background:url(m_index/philosophy_tp04.png) no-repeat 50% 15px; }
 
-.philosophy .con ul li span{ display:inline-block; clear:both; width:80%; height:60px; padding:0; margin:120px auto 0 auto; overflow:hidden; text-align:center; line-height:20px; font-size:14px; color:#888;}
+.philosophy .con ul li span{ display:inline-block; clear:both; width:80%; height:60px; padding:0; margin:120px auto 0 auto; overflow:hidden; text-align:center; line-height:20px; font-size:16px; color:#888;}
 .philosophy .con ul li a.view_detail{ display:inline-block; clear:both; width:auto; height:36px; padding:0 20px; margin:10px auto; overflow:hidden; text-align:center; line-height:36px; font-size:16px; color:#999; font-family:Microsoft Yahei, Arial; border-radius:10px; border:2px solid #ccc;}
 .philosophy .con ul li a.view_detail:hover{ color:#fff; border:2px solid #c33; background:#c33;}
