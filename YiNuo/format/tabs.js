@@ -18,7 +18,7 @@ jQuery(document).ready(function () {
         var url=location.href;
 	    var paraString=url.substring(url.indexOf("#"),url.length);
         // jQuery('a[href=paraString]').click();
-        var aE=jQuery('a[href=paraString]');
+        var aE=jQuery("a[href='"+paraString+"']");
         aE.click();
     }
     
