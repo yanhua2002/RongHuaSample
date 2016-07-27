@@ -17,7 +17,9 @@ jQuery(document).ready(function () {
     if (location.href.indexOf("#")>-1) {
         var url=location.href;
 	    var paraString=url.substring(url.indexOf("#"),url.length);
-        jQuery('a[href=paraString]').click();
+        // jQuery('a[href=paraString]').click();
+        var aE=jQuery('a[href=paraString]');
+        aE.click();
     }
     
 });
