@@ -13,4 +13,11 @@ jQuery(document).ready(function () {
 
         e.preventDefault();
     });
+
+    if (location.href.indexOf("#")>-1) {
+        var url=location.href;
+	    var paraString=url.substring(url.indexOf("#"),url.length);
+        jQuery('a[href=paraString]').click();
+    }
+    
 });
